@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pacific Agency</title>
+  <link rel="shortcut icon" href="/img/avatars.jpg" type="image/x-icon">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="/css/index.css">
+    
+</head>
+<body>
+
+  <header>
+    <h1>Pacific Agency</h1>
+
+    <!-- Social Media Button -->
+    <button class="social-media-button" onclick="toggleSocialMedia()">
+      <i class="fas fa-share-alt"></i>
+    </button>
+
+    <!-- Social Media Icons -->
+    <div class="social-media-icons" id="socialMediaIcons">
+      <a href="https://www.facebook.com/profile.php?id=61553851221204" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+       <a href="https://wa.me/67574883048" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp
+</a>
+
+    </div>
+  </header>
+
+  <div class="main">
+    <!-- Menu Button -->
+    <button class="menu-button" onclick="toggleSidebar()" aria-label="Menu">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Sidebar -->
+    <div class="slidebar" id="slider">
+      <a href="#" onclick="loadContent('home')"><i class="fas fa-home"></i>Home</a>
+      <a href="#" onclick="loadContent('about')"><i class="fas fa-info-circle"></i>About Us</a>
+      <a href="#" onclick="loadContent('location')"><i class="fas fa-map-marker-alt"></i>Location</a>
+      <a href="#" onclick="loadContent('contact')"><i class="fas fa-phone"></i>Contact</a>
+      <a href="#" onclick="loadContent('logout')"><i class="fas fa-sign-out-alt"></i>Logout</a>
+    </div>
+ 
+    <!-- Content Area -->
+    <div class="container" id="content">
+      <h2>Welcome to Pacific Agency</h2>
+            
+      <p>We are specialised in,clean fast and user,friendly websites for your business in Papua New Guinea.</p>
+      <br>
+      <div class="image-slider" id="imageSlider">
+  <img src="https://th.bing.com/th/id/R.46a3bbf87d7434e4cce7449da0acc13e?rik=qXfqKDbNy2S%2blA&pid=ImgRaw&r=0" alt="Slide 1">
+  <img src="/img/OIP.jpg" alt="Slide 2">
+  <img src="https://th.bing.com/th/id/OIP.YgPScXBZY8Xo5rJOohBVQQHaE7?cb=iwp2&rs=1&pid=ImgDetMain" alt="Slide 3">
+   <img src="https://static.vecteezy.com/system/resources/previews/000/457/141/large_2x/landing-page-template-of-website-design-illustration-concept-isometric-flat-design-concept-of-web-page-design-for-website-and-mobile-website-vector-illustration.jpg" alt="Slide 4">
+    
+</div>
+   
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; Pacific Agency. All rights reserved.</p>
+  </footer>
+
+<script src="/script/index.js"></script>
+
+</body>
+</html>
+

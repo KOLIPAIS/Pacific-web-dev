@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pacific Agency</title>
+  <link rel="shortcut icon" href="/img/avatars.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #eee205;
+      color: #000000;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #1b45ff;
+    }
+
+    p {
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: #1b45ff;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn:hover {
+      background-color: #444;
+    }
+
+    .spinner {
+      display: none;
+    }
+
+    .spinner.show {
+      display: inline-block;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Pacific Agency</h1>
+  <p>Welcome to the pacific Agency!</p>
+
+  <!-- Button with spinner icon -->
+  <button class="btn" onclick="handleLogin()">
+    <span>Login</span>
+    <i class="fas fa-spinner spinner" id="spinnerIcon"></i>
+  </button>
+
+  <script>
+    function handleLogin() {
+      const spinner = document.getElementById('spinnerIcon');
+      spinner.classList.add('show'); // Show spinner
+
+      setTimeout(() => {
+        window.location.href = 'index.html'; // Redirect after 5 seconds
+      }, 5000);
+    }
+  </script>
+
+</body>
+</html>
+
